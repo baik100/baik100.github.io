@@ -1,0 +1,181 @@
+/* Header */
+
+header.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  .is-scroll & {
+    background: #ffffff;
+  }
+  .gnb {
+    @include screen-sm {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      width: 100%;
+      background-color: #919191;
+      text-align: right;
+      padding: 50px 20px 20px;
+      -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      -ms-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      .is-sideopen & {
+        left: 0;
+      }
+    }
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        + li {
+          border-left: 1px solid rgba(255, 255, 255, 0.2);
+          @include screen-md {
+            border: 0;
+          }
+          @include screen-sm {
+            border: 0;
+          }
+        }
+        @include screen-min-md {
+          .is-scroll &{
+            background: transparent;
+            border: 0;
+          }
+        }
+        @include screen-sm {
+          width: 80%;
+          height: 60px;
+          line-height: 60px;
+          + li {
+            margin-top: 30px;
+          }
+        }
+        a {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 60px;
+          padding: 0 50px;
+          text-transform: uppercase;
+          font-weight: 400;
+          color: #eaeaea;
+          @include screen-md {
+            font-size: 24px;
+          }
+          @include screen-sm {
+            font-size: 24px;
+          }
+        }
+      }
+      li:hover {
+        a {
+          color: #6ff9d7;
+        }
+        .is-scroll & {
+          @include screen-min-md {
+            background: none;
+          }
+        }
+      }
+      .is-scroll & {
+        a {
+          color: #999;
+          @include screen-sm {
+            color: #eaeaea;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    display: none;
+    @include screen-sm {
+      display: block;
+    }
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+    .detail {
+      p {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: owsald;
+        margin: 0 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.32);
+        @include screen-sm {
+          border: none;
+          display: block;
+          margin: 10px 0;
+        }
+        .material-icons {
+          font-size: 14px;
+          margin: 0 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .social {
+      text-align: center;
+      img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 8px;
+        opacity: 0.3;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    @include screen-sm {
+      display: block;
+    }
+    i {
+      color: #fff;
+      font-size: 35px;
+    }
+  }
+  .is-scroll & {
+    @include screen-min-md {
+      background: rgba(255, 255, 255,1);
+      border-bottom: 1px solid #dddddd;
+    }
+  }
+  .btn-menu {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: none;
+    @include screen-sm {
+      display: block;
+    }
+    .material-icons {
+      font-size: 35px;
+      color: #6ff9d7;
+    }
+    & :hover {
+      color: #b5b5b5;
+      transform: rotate(180deg);
+      transition: 1s;
+    }
+  }
+}

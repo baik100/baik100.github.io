@@ -1,0 +1,412 @@
+/**
+ Main page style
+*/
+
+//section title common
+
+#section {
+  height: 100vh;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+
+.visual {
+  position: relative;
+  background: url('https://images.unsplash.com/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?ixlib=rb-0.3.5&s=8d6f8b8456b5e0957770c1a0e1efcc48&auto=format&fit=crop&w=1650&q=80') 50% 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover !important;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64,64,64,0.125);
+  }
+
+  .text {
+    padding: 280px 0 150px;
+    h3 {
+      font-size: 70px;
+      font-weight: 600;
+      color: #ffffff;
+      text-transform: capitalize;
+      @include screen-sm {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-size: 30px;
+      font-weight: 300;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    @include screen-md {
+      text-align: left;
+    }
+    @include screen-sm {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}
+
+.about {
+  background-color: #f9f9f9;
+  text-align: center;
+  .title-area {
+    padding: 120px 0 30px 0;
+    @include screen-sm {
+      padding: 80px 0;
+    }
+    h3 {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 400;
+      color: #bbbbbb;
+      @include screen-sm {
+        font-size: 50px;
+      }
+    }
+  }
+  .text {
+    text-align: center;
+    .name {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 30px;
+      @include screen-sm {
+        border: none;
+        margin-bottom: 80px;
+      }
+      p {
+        display: inline-block;
+        color: #888;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        margin: 30px;
+        @include screen-sm {
+          display: block;
+        }
+        span {
+          font-weight: 800;
+          color: #000;
+        }
+        i {
+          width: 28px;
+          height: 28px;
+          padding: 6px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          font-size: 14px;
+          background: #57c4a9;
+          vertical-align: middle;
+          color: #fff;
+        }
+      }
+    }
+
+    }
+  .skill {
+    padding: 50px 0;
+    @include screen-sm {
+      padding: 0 0 20px 0;
+    }
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        vertical-align: top;
+        width: 18%;
+        @include screen-sm {
+          width: 40%;
+        }
+        img {
+          height: 30px;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #000;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.2;
+          @include screen-sm {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-banner {
+  background: url("https://images.unsplash.com/photo-1489379391348-c9f07b42b696?ixlib=rb-0.3.5&s=6ebc2d3c048931c93f508592e7f8bbdd&auto=format&fit=crop&w=1650&q=80");
+  text-align: center;
+  @include screen-sm {
+    display: none;
+  }
+  p {
+    color: #fff;
+    padding: 80px 0 30px;
+  }
+  .btn-view {
+    display: inline-block;
+    margin: 0 auto 60px;
+    width: 160px;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    a {
+      color: #fff;
+      font-weight: 400;
+      display: block;
+    }
+  }
+}
+
+.work {
+  padding: 50px 0;
+  background: rgba(87, 196, 169, 0.65);
+  position: relative;
+  //.light-box {
+  //  position: absolute;
+  //  top: 20%;
+  //  left: 50%;
+  //  margin-left: -400px;
+  //  width: 800px;
+  //  height: 500px;
+  //  background: #57c4a9;
+  //  z-index: 1000;
+  //}
+  @include screen-sm {
+    padding: 30px 0;
+  }
+  @include screen-md {
+    padding: 30px 0;
+  }
+  .item {
+    margin: 60px auto;
+    list-style: none;
+    .thumb {
+      display: inline-block;
+      text-align: center;
+      padding: 30px 30px;
+      width: 48%;
+      @include screen-sm {
+        width: 100%;
+        padding: 20px 30px;
+        margin: 0 auto;
+      }
+      @include screen-md {
+        width: 100%;
+        padding: 20px 30px;
+        margin: 0 auto;
+      }
+      .images {
+        position: relative;
+        width: 100%;
+        height: 330px;
+        background-color: #333333;
+        text-align: center;
+        overflow: hidden;
+        border: 1px solid #57c4a9;
+        @include screen-sm {
+          height: 180px;
+        }
+        .desc {
+          padding: 20px;
+          p {
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.69);
+            text-transform: uppercase;
+            span {
+              font-weight: 700;
+              color: #ffffff;
+            }
+          }
+
+        }
+        .screen {
+          display: none;
+        }
+        &:hover {
+          .screen {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.69);
+            i {
+              padding-top: 105px;
+              color: #57c4a9;
+              font-size: 50px;
+              @include screen-sm {
+                padding-top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  padding: 150px 0;
+  background: #fbfbfb;
+  p {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 36px;
+    @include screen-sm {
+      font-size: 30px;
+    }
+  }
+  .text {
+    text-align: center;
+    display: block;
+    input {
+      width: 70%;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #000;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333333;
+      &:focus {
+        border: 1px solid #333;
+      }
+      @include screen-sm {
+        height: 40px;
+        margin-bottom: 10px;
+      }
+    }
+    textarea {
+      width: 70%;
+      height: 260px;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #000;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333333;
+      &:focus {
+        border: 1px solid #000;
+      }
+      @include screen-sm {
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      @include screen-md {
+        height: 250px;
+      }
+    }
+    button {
+      display: block;
+      width: 150px;
+      height: 60px;
+      background: #57c4a9;
+      line-height: 60px;
+      color: #fff;
+      font-size: 18px;
+      margin: 15px auto 0;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: none;
+      @include screen-sm {
+        width: 100px;
+        height: 60px;
+      }
+      &:hover {
+        background: -webkit-linear-gradient(-45deg, #000, #000);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 80px 30px;
+  background-color: #666666;
+  height: 180px;
+  border-top: 1px solid #adadad;
+  @include screen-sm {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .detail {
+    float: left;
+    margin-top: 20px;
+    @include screen-sm {
+      float: none;
+      margin: 0 auto;
+    }
+    p {
+      float: left;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-family: owsald;
+      font-weight: 400;
+      @include screen-sm {
+        float: none;
+        margin: 0 auto;
+      }
+      .material-icons {
+        font-size: 14px;
+        margin: 0 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .social {
+    float: right;
+    @include screen-sm {
+      float: none;
+      margin: 0 auto;
+    }
+    img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 8px;
+      opacity: 0.8;
+      -webkit-borde1r-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.back-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #57c4a9;
+  cursor: pointer;
+  i {
+    color: #57c4a9;
+    padding: 13px;
+  }
+}
