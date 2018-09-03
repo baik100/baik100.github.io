@@ -1,1 +1,1 @@
-http://bcy0729.dothome.co.kr/port_/web/index.html
+https://github.com/baik100/baik100.github.io
