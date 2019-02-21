@@ -13,9 +13,9 @@
     
 
     
-        <meta name="description" content="##Hexo
-##React
-##Nginx">
+        <meta name="description" content="히스토리 내 이동back(), forward(), 그리고 go() 메서드 등을 이용하여 사용자 히스토리에서 앞 뒤 이동이 가능
+앞으로 가기와 뒤로 가기히스토리에서 뒤로 가기 위해서는 아래 명령어를 실행1window.history.back();
+1window.histor">
     
 
     <!--Author-->
@@ -25,14 +25,14 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="tags">
+        <meta property="og:title" content="브라우저 히스토리조작하기">
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="##Hexo
-##React
-##Nginx">
+        <meta property="og:description" content="히스토리 내 이동back(), forward(), 그리고 go() 메서드 등을 이용하여 사용자 히스토리에서 앞 뒤 이동이 가능
+앞으로 가기와 뒤로 가기히스토리에서 뒤로 가기 위해서는 아래 명령어를 실행1window.history.back();
+1window.histor">
     
 
     <!--Open Graph Site Name-->
@@ -59,7 +59,7 @@
 
     <!-- Title -->
     
-    <title>tags - </title>
+    <title>브라우저 히스토리조작하기 - </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -163,59 +163,65 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-    <header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>tags</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="post-preview">
-    <a href="/tags/React/">
-        <h1 class="post-title archive">
-            React
-        </h1>
-    </a>
-</div>
-                
-                    <div class="post-preview">
-    <a href="/tags/Hexo/">
-        <h1 class="post-title archive">
-            Hexo
-        </h1>
-    </a>
-</div>
-                
-                    <div class="post-preview">
-    <a href="/tags/Nginx/">
-        <h1 class="post-title archive">
-            Nginx
-        </h1>
-    </a>
-</div>
-                
-                <div class="archive-before-pagination"></div>
+                <div class="post-heading">
+                    <h1>브라우저 히스토리조작하기</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-02-21
+                        
+                    </span>
+                </div>
             </div>
         </div>
     </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="히스토리-내-이동"><a href="#히스토리-내-이동" class="headerlink" title="히스토리 내 이동"></a>히스토리 내 이동</h2><p><code>back()</code>, <code>forward()</code>, 그리고 <code>go()</code> 메서드 등을 이용하여 사용자 히스토리에서 앞 뒤 이동이 가능</p>
+<h2 id="앞으로-가기와-뒤로-가기"><a href="#앞으로-가기와-뒤로-가기" class="headerlink" title="앞으로 가기와 뒤로 가기"></a>앞으로 가기와 뒤로 가기</h2><p>히스토리에서 뒤로 가기 위해서는 아래 명령어를 실행<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.history.back();</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.history.forward();</span><br></pre></td></tr></table></figure>
+<p>##히스토리에서 특정 위치로 가기섹션</p>
+<p>한페이지 뒤로 가기<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.history.go(<span class="number">-1</span>);</span><br></pre></td></tr></table></figure></p>
+<p>한페이지 앞으로 가기<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.history.go(<span class="number">1</span>);</span><br></pre></td></tr></table></figure></p>
+<p>히스토리 스택의 length 속성을 이용하여 페이지가 몇 페이지로 구성되어 있는지 알 수 있다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numberOfEntries = <span class="built_in">window</span>.history.length;</span><br></pre></td></tr></table></figure></p>
 
 
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
 
 
-
+                </div>
+            
+        </div>
+    </div>
+</article>
 
     <!-- Footer -->
     <hr>
