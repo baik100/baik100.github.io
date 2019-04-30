@@ -13,6 +13,13 @@
     
 
     
+        <meta name="description" content="DOM APIs
+다양한 DOM 속성과 메서드들
+createElement, CreateTextNode, appendChild
+insertBefore, innerText, innerHTML, insertAdjacentHTML
+
+##DOM 엘리먼트 오브젝트몇 가지 유용 DO">
+    
 
     <!--Author-->
     
@@ -21,10 +28,17 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="">
+        <meta property="og:title" content="DOM Node 조작하기">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="DOM APIs
+다양한 DOM 속성과 메서드들
+createElement, CreateTextNode, appendChild
+insertBefore, innerText, innerHTML, insertAdjacentHTML
+
+##DOM 엘리먼트 오브젝트몇 가지 유용 DO">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +46,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +65,7 @@
 
     <!-- Title -->
     
-    <title></title>
+    <title>DOM Node 조작하기 - </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -156,188 +170,152 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1></h1>
-                    <hr class="small">
-                    <span class="subheading"></span>
+                <div class="post-heading">
+                    <h1>DOM Node 조작하기</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-04-29
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2019/04/29/DOM-Node-조작하기/">
-        <h2 class="post-title">
-            DOM Node 조작하기
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-04-29
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/04/29/Javascript-배열과-객체/">
-        <h2 class="post-title">
-            Javascript 객체
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-04-29
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/04/27/React-Life-Cycle/">
-        <h2 class="post-title">
-            React Life Cycle
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-04-27
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/04/11/Javascript-데이터타입과-변수/">
-        <h2 class="post-title">
-            Javascript 데이터타입과 변수 
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-04-11
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/04/11/Javascript-이해하기/">
-        <h2 class="post-title">
-            Javascript 이해하기
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-04-11
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/03/07/npm-버전업데이트하기/">
-        <h2 class="post-title">
-            node.js와 npm 버전 업그레이드하기
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-03-07
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/02/21/브라우저-히스토리조작하기/">
-        <h2 class="post-title">
-            브라우저 히스토리조작하기
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-02-21
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/01/26/React-router-dom/">
-        <h2 class="post-title">
-            React router dom
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-01-26
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/01/25/gulp-modules/">
-        <h2 class="post-title">
-            gulp modules
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-01-25
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2019/01/25/gulp-setting/">
-        <h2 class="post-title">
-            gulp setting
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-01-25
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Javascript/">#Javascript</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
-        <li class="next"><a href="/page/2/">Older Posts  &rarr;</a></li>
-    
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul>
+<li>DOM APIs</li>
+<li>다양한 DOM 속성과 메서드들</li>
+<li>createElement, CreateTextNode, appendChild</li>
+<li>insertBefore, innerText, innerHTML, insertAdjacentHTML</li>
 </ul>
+<p>##DOM 엘리먼트 오브젝트<br>몇 가지 유용 DOM 엘리먼트 속성</p>
+<ul>
+<li>tagName : 엘리먼트의 태그명 반환</li>
+<li>textContent : 노드의 텍스트 내용을 설정하거나 반환</li>
+<li>nodeType : 노드의 노드 유형을 숫자로 반환</li>
+</ul>
+<p>DOM 탐색 속성</p>
+<ul>
+<li>childNodes<ul>
+<li>엘리먼트의 자식 노드의 노드 리스트 반환(텍스트 노드, 주석 노드 포함)</li>
+</ul>
+</li>
+<li>firstChild<ul>
+<li>엘리먼트의 첫 번째 자식 노드를 반환</li>
+</ul>
+</li>
+<li>firstElementChild<ul>
+<li>첫 번째 자식 엘리먼트를 반환</li>
+</ul>
+</li>
+<li>parentElement<ul>
+<li>엘리먼트의 부모 엘리먼트 반환 </li>
+</ul>
+</li>
+<li>nextSibling<ul>
+<li>동일한 노드 트리 레벨에서 다음 노드를 반환 </li>
+</ul>
+</li>
+<li>nextElementSibling<ul>
+<li>동일한 노드 트리 레벨에서 다음 엘리먼트 반환</li>
+</ul>
+</li>
+</ul>
+<p>DOM 조작 메소드</p>
+<ul>
+<li>removeChild()<ul>
+<li>엘리먼트의 자식 노드 제거 </li>
+</ul>
+</li>
+<li>appendChild()<ul>
+<li>마지막 자식 노드로 자식 노드를 엘리먼트에 추가</li>
+</ul>
+</li>
+<li>insertBefore()<ul>
+<li>기존 자식노드 앞에 새 자식 노드를 추가</li>
+</ul>
+</li>
+<li>cloneNode()<ul>
+<li>노드를 복제</li>
+</ul>
+</li>
+<li>replaceChild()<ul>
+<li>엘리먼트의 자식 노드 바꿈</li>
+</ul>
+</li>
+<li>closest()<ul>
+<li>상위로 올라가면서 가장 가까운 엘리먼트를 반환</li>
+</ul>
+</li>
+</ul>
+<p>HTML을 문자열로 처리해주는 DOM 속성 / 메소드</p>
+<ul>
+<li>innerText<ul>
+<li>지정된 노드와 모든 자손의 텍스트 내용을 설정하거나 반환</li>
+</ul>
+</li>
+<li>innerHTML<ul>
+<li>지정된 엘리먼트의 내부 html을 설정하거나 반환</li>
+</ul>
+</li>
+<li>insertAdjacentHTML()<ul>
+<li>HTML로 텍스트를 지정된 위치에 삽입</li>
+</ul>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr>
