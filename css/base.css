@@ -194,8 +194,8 @@ hr.small {
   align-items: center;
   justify-content: center;
 }
-.intro-header .site-heading > span,
-.intro-header .page-heading > span {
+.intro-header .site-heading .icons > span,
+.intro-header .page-heading .icons > span {
   width: 40px;
   height: 40px;
   padding: 0 10px;
