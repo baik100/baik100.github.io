@@ -78,7 +78,6 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  background: #000;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -92,8 +91,8 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    /*background: transparent;*/
-    /*border-bottom: 1px solid transparent;*/
+    background: transparent;
+    border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
     color: #fff;
@@ -168,7 +167,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: #fff;
+  color: #000;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
