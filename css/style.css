@@ -201,13 +201,13 @@ hr.small {
   width: 40px;
   height: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .intro-header .site-heading .icons > span,
   .intro-header .page-heading .icons > span {
     margin: 0 4px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .intro-header .site-heading .icons > a > img,
   .intro-header .page-heading .icons > a > img {
     width: 24px;
