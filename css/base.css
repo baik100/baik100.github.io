@@ -188,14 +188,31 @@ hr.small {
   margin-top: 0;
   font-size: 40px;
 }
+.intro-header .site-heading .icons,
+.intro-header .page-heading .icons {
+  padding-top: 40px;
+}
 .intro-header .site-heading .icons > span,
 .intro-header .page-heading .icons > span {
   margin: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading .icons > span,
+  .intro-header .page-heading .icons > span {
+    margin: 0 4px;
+  }
 }
 .intro-header .site-heading .icons > span > img,
 .intro-header .page-heading .icons > span > img {
   width: 40px;
   height: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading .icons > span > img,
+  .intro-header .page-heading .icons > span > img {
+    width: 24px;
+    height: 24px;
+  }
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
@@ -203,7 +220,7 @@ hr.small {
   line-height: 1.1;
   display: block;
   font-weight: 300;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
@@ -249,6 +266,11 @@ hr.small {
 }
 .post-preview > a > .post-thumb {
   max-width: 750px;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-thumb {
+    max-width: 100%;
+  }
 }
 .post-preview > a > .post-title {
   font-size: 30px;
