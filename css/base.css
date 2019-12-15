@@ -301,7 +301,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-thumb {
-    width: 100%;
+    max-width: 100%;
   }
   .post-preview > a > .post-title {
     font-size: 24px;
