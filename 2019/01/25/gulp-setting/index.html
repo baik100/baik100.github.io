@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Setting up gulppackage.json 파일생성하기1npm init
+글로벌과 로컬전역 설치하기12$ npm install gulp --global$ npm install gulp --save-dev
+디펜던시 설치1npm install gulp --save-d">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="baik100">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="gulp setting">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Setting up gulppackage.json 파일생성하기1npm init
+글로벌과 로컬전역 설치하기12$ npm install gulp --global$ npm install gulp --save-dev
+디펜던시 설치1npm install gulp --save-d">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://github.com/baik100https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="https://github.com/baik100https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80">
+    
+
+    <!-- Title -->
+    
+    <title>gulp setting - </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="http://bcy0729.dothome.co.kr/port_/web/assets/img/favicon.ico">
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">100's</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/baik100">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>gulp setting</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-01-25
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/gulp/">#gulp</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="Setting-up-gulp"><a href="#Setting-up-gulp" class="headerlink" title="Setting up gulp"></a>Setting up gulp</h2><p>package.json 파일생성하기<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure></p>
+<p>글로벌과 로컬전역 설치하기<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install gulp --global</span><br><span class="line">$ npm install gulp --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>디펜던시 설치<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>플러그인 설치<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp-[plugin name] --save-dev</span><br></pre></td></tr></table></figure></p>
+<h2 id="Folder-structure"><a href="#Folder-structure" class="headerlink" title="Folder structure"></a>Folder structure</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">	src/</span><br><span class="line">		index.html</span><br><span class="line">		img/</span><br><span class="line">		js/</span><br><span class="line">		scss/</span><br><span class="line">	dist/</span><br><span class="line">		index.html</span><br><span class="line">		img/</span><br><span class="line">		js/</span><br><span class="line">		css/</span><br><span class="line">	lib/</span><br><span class="line">		vanilla.js</span><br><span class="line">		fancybox.js</span><br><span class="line">gulpfile.js</span><br><span class="line">package.json</span><br></pre></td></tr></table></figure>
+<h2 id="gulpflie-js"><a href="#gulpflie-js" class="headerlink" title="gulpflie.js"></a>gulpflie.js</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line"><span class="keyword">var</span> webserver = <span class="built_in">require</span>(<span class="string">'gulp-webserver'</span>);</span><br><span class="line"><span class="keyword">var</span> concat = <span class="built_in">require</span>(<span class="string">'gulp-concat'</span>);</span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">'gulp-uglify'</span>);</span><br><span class="line"><span class="keyword">var</span> minifyhtml = <span class="built_in">require</span>(<span class="string">'gulp-minify-html'</span>);</span><br><span class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</span><br><span class="line"><span class="keyword">var</span> livereload = <span class="built_in">require</span>(<span class="string">'gulp-livereload'</span>);</span><br></pre></td></tr></table></figure>
+<p>플러그인을 한번에 설치 할 수있다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp-webserver gulp-concat gulp-uglify gulp-minify-html gulp-sass gulp-livereload --save-dev</span><br></pre></td></tr></table></figure></p>
+<p>path설정<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> src = <span class="string">'public/src'</span>;</span><br><span class="line"><span class="keyword">var</span> dist = <span class="string">'public/dist'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> paths = &#123;</span><br><span class="line">	js: src + <span class="string">'/js/*.js'</span>,</span><br><span class="line">	scss: src + <span class="string">'/scss/*.scss'</span>,</span><br><span class="line">	html: src + <span class="string">'/**/*.html'</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>실제 task 작성</p>
+<p><code>gulp.task</code>메서드는 새로운 gulp task를 등록해주는 역할을 한다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">// 웹서버를 localhost:8000 로 실행한다.</span><br><span class="line">gulp.task(&apos;server&apos;, function () &#123;</span><br><span class="line">	return gulp.src(dist + &apos;/&apos;)</span><br><span class="line">		.pipe(webserver());</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 자바스크립트 파일을 하나로 합치고 압축한다.</span><br><span class="line">gulp.task(&apos;combine-js&apos;, function () &#123;</span><br><span class="line">	return gulp.src(paths.js)</span><br><span class="line">		.pipe(concat(&apos;script.js&apos;))</span><br><span class="line">		.pipe(uglify())</span><br><span class="line">		.pipe(gulp.dest(dist + &apos;/js&apos;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// sass 파일을 css 로 컴파일한다.</span><br><span class="line">gulp.task(&apos;compile-sass&apos;, function () &#123;</span><br><span class="line">	return gulp.src(paths.scss)</span><br><span class="line">		.pipe(sass())</span><br><span class="line">		.pipe(gulp.dest(dist + &apos;/css&apos;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// HTML 파일을 압축한다.</span><br><span class="line">gulp.task(&apos;compress-html&apos;, function () &#123;</span><br><span class="line">	return gulp.src(paths.html)</span><br><span class="line">		.pipe(minifyhtml())</span><br><span class="line">		.pipe(gulp.dest(dist + &apos;/&apos;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 파일 변경 감지 및 브라우저 재시작</span><br><span class="line">gulp.task(&apos;watch&apos;, function () &#123;</span><br><span class="line">	livereload.listen();</span><br><span class="line">	gulp.watch(paths.js, [&apos;combine-js&apos;]);</span><br><span class="line">	gulp.watch(paths.scss, [&apos;compile-sass&apos;]);</span><br><span class="line">	gulp.watch(paths.html, [&apos;compress-html&apos;]);</span><br><span class="line">	gulp.watch(dist + &apos;/**&apos;).on(&apos;change&apos;, livereload.changed);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">//기본 task 설정</span><br><span class="line">gulp.task(&apos;default&apos;, [</span><br><span class="line">	&apos;server&apos;, &apos;combine-js&apos;, </span><br><span class="line">	&apos;compile-sass&apos;, &apos;compress-html&apos;, </span><br><span class="line">	&apos;watch&apos; ]);</span><br></pre></td></tr></table></figure></p>
+<p>따라서 각 task는 아래와 같이 실행 될 수 있다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gulp.sever</span><br></pre></td></tr></table></figure></p>
+<h2 id="Default-task"><a href="#Default-task" class="headerlink" title="Default task"></a>Default task</h2><p>default를 추가 해준 task를 기본 실행하게 된다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// hello world 라고 콘솔에 찍는 task</span></span><br><span class="line">gulp.task(<span class="string">'hello'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">console</span>.log(<span class="string">'Hello World!'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//gulp를 실행하면 default 로 hello task 실행</span></span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'hello'</span>]);</span><br></pre></td></tr></table></figure></p>
+<p>실행시 아래와 같이 입력하면 된다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gulp</span><br></pre></td></tr></table></figure></p>
+<h2 id="Task-in-series"><a href="#Task-in-series" class="headerlink" title="Task in series"></a>Task in series</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// hello 라고 콘솔에 찍는 task</span></span><br><span class="line">gulp.task(<span class="string">'hello'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">console</span>.log(<span class="string">'Hello'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// world 라고 콘솔에 찍는 task, hello 라는 task가 먼저 완료된 뒤에만 실행된다.</span></span><br><span class="line">gulp.task(<span class="string">'world'</span>, [<span class="string">'hello'</span>], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">console</span>.log(<span class="string">'World!'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//gulp를 실행하면 default 로 world task를 실행</span></span><br><span class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'world'</span>]);</span><br></pre></td></tr></table></figure>
+<p>두번째 파라메터에 먼 실행되어야할 task를 배열의 형태로 넣어두면 해당 task를 먼저 수행하게 된다.<br>실행시 아래와 같이 입력하면 된다.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gulp</span><br></pre></td></tr></table></figure></p>
+<p>출처: <a href="https://programmingsummaries.tistory.com/377?category=700959" target="_blank" rel="noopener">https://programmingsummaries.tistory.com/377?category=700959</a></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/baik100" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 baik100<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

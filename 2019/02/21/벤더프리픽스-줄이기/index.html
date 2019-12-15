@@ -13,7 +13,15 @@
     
 
     
-        <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+        <meta name="description" content="border-radius벤더 프리픽스 필요없음
+.example {
+    border-radius:10px;
+}
+box-shadow벤더 프리픽스 필요없음
+.example {
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+background-">
     
 
     <!--Author-->
@@ -23,12 +31,20 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hellow world">
+        <meta property="og:title" content="벤더프리픽스 줄이기">
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+        <meta property="og:description" content="border-radius벤더 프리픽스 필요없음
+.example {
+    border-radius:10px;
+}
+box-shadow벤더 프리픽스 필요없음
+.example {
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+background-">
     
 
     <!--Open Graph Site Name-->
@@ -55,7 +71,7 @@
 
     <!-- Title -->
     
-    <title>Hellow world - </title>
+    <title>벤더프리픽스 줄이기 - </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -159,11 +175,7 @@
 </nav>
 
     <!-- Main Content -->
-    
-
-
-    <section class="main">
-        <!-- Page Header -->
+    <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
 <header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
@@ -171,13 +183,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Hellow world</h1>
+                    <h1>벤더프리픽스 줄이기</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2019-01-21
+                            2019-02-21
                         
                     </span>
                 </div>
@@ -193,26 +205,58 @@
 
             <!-- Tags and categories -->
            
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/CSS/">#CSS</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="Create-Tag-page"><a href="#Create-Tag-page" class="headerlink" title="Create Tag page"></a>Create Tag page</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: All tags</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-
+                <h2 id="border-radius"><a href="#border-radius" class="headerlink" title="border-radius"></a>border-radius</h2><p>벤더 프리픽스 필요없음</p>
+<pre><code>.example {
+    border-radius:10px;
+}
+</code></pre><h2 id="box-shadow"><a href="#box-shadow" class="headerlink" title="box-shadow"></a>box-shadow</h2><p>벤더 프리픽스 필요없음</p>
+<pre><code>.example {
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+</code></pre><h2 id="background-origin-background-size-background-clip"><a href="#background-origin-background-size-background-clip" class="headerlink" title="background-origin, background-size, background-clip"></a>background-origin, background-size, background-clip</h2><p>벤더 프리픽스 필요없음</p>
+<pre><code>.example {
+    background-origin:content-box;
+    background-size:100% auto;
+    background-clip:content-box;
+}
+</code></pre><h2 id="gradients"><a href="#gradients" class="headerlink" title="gradients"></a>gradients</h2><p>-webkit-만 사용합니다.</p>
+<pre><code>.example {
+    background:#f9f9f9;
+    background:-webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+    background:linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+}
+</code></pre><h2 id="calc"><a href="#calc" class="headerlink" title="calc()"></a>calc()</h2><p>-webkit-만 사용합니다.</p>
+<pre><code>.example {
+    background-position:100% 100%;
+    background-position:-webkit-calc(100% + 30px) -webkit-calc(100% + 16px);
+    background-position:calc(100% + 30px) calc(100% + 16px);
+}
+</code></pre><h2 id="transitions"><a href="#transitions" class="headerlink" title="transitions"></a>transitions</h2><p>-webkit-만 사용합니다.</p>
+<pre><code>.example {
+    -webkit-transition:background-position 0.5s;
+    transition:background-position 0.5s;
+}
+</code></pre>
 
                 
             </div>
@@ -228,12 +272,6 @@
         </div>
     </div>
 </article>
-    </section>
-
-
-
-
-
 
     <!-- Footer -->
     <hr>

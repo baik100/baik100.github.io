@@ -13,7 +13,12 @@
     
 
     
-        <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+        <meta name="description" content="DOM APIs
+다양한 DOM 속성과 메서드들
+createElement, CreateTextNode, appendChild
+insertBefore, innerText, innerHTML, insertAdjacentHTML
+
+##DOM 엘리먼트 오브젝트몇 가지 유용 DO">
     
 
     <!--Author-->
@@ -23,12 +28,17 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hellow world">
+        <meta property="og:title" content="DOM Node 조작하기">
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+        <meta property="og:description" content="DOM APIs
+다양한 DOM 속성과 메서드들
+createElement, CreateTextNode, appendChild
+insertBefore, innerText, innerHTML, insertAdjacentHTML
+
+##DOM 엘리먼트 오브젝트몇 가지 유용 DO">
     
 
     <!--Open Graph Site Name-->
@@ -55,7 +65,7 @@
 
     <!-- Title -->
     
-    <title>Hellow world - </title>
+    <title>DOM Node 조작하기 - </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -159,11 +169,7 @@
 </nav>
 
     <!-- Main Content -->
-    
-
-
-    <section class="main">
-        <!-- Page Header -->
+    <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
 <header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80')">
@@ -171,13 +177,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Hellow world</h1>
+                    <h1>DOM Node 조작하기</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2019-01-21
+                            2019-04-29
                         
                     </span>
                 </div>
@@ -193,25 +199,107 @@
 
             <!-- Tags and categories -->
            
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Javascript/">#Javascript</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="Create-Tag-page"><a href="#Create-Tag-page" class="headerlink" title="Create Tag page"></a>Create Tag page</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: All tags</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
+                <ul>
+<li>DOM APIs</li>
+<li>다양한 DOM 속성과 메서드들</li>
+<li>createElement, CreateTextNode, appendChild</li>
+<li>insertBefore, innerText, innerHTML, insertAdjacentHTML</li>
+</ul>
+<p>##DOM 엘리먼트 오브젝트<br>몇 가지 유용 DOM 엘리먼트 속성</p>
+<ul>
+<li>tagName : 엘리먼트의 태그명 반환</li>
+<li>textContent : 노드의 텍스트 내용을 설정하거나 반환</li>
+<li>nodeType : 노드의 노드 유형을 숫자로 반환</li>
+</ul>
+<p>DOM 탐색 속성</p>
+<ul>
+<li>childNodes<ul>
+<li>엘리먼트의 자식 노드의 노드 리스트 반환(텍스트 노드, 주석 노드 포함)</li>
+</ul>
+</li>
+<li>firstChild<ul>
+<li>엘리먼트의 첫 번째 자식 노드를 반환</li>
+</ul>
+</li>
+<li>firstElementChild<ul>
+<li>첫 번째 자식 엘리먼트를 반환</li>
+</ul>
+</li>
+<li>parentElement<ul>
+<li>엘리먼트의 부모 엘리먼트 반환 </li>
+</ul>
+</li>
+<li>nextSibling<ul>
+<li>동일한 노드 트리 레벨에서 다음 노드를 반환 </li>
+</ul>
+</li>
+<li>nextElementSibling<ul>
+<li>동일한 노드 트리 레벨에서 다음 엘리먼트 반환</li>
+</ul>
+</li>
+</ul>
+<p>DOM 조작 메소드</p>
+<ul>
+<li>removeChild()<ul>
+<li>엘리먼트의 자식 노드 제거 </li>
+</ul>
+</li>
+<li>appendChild()<ul>
+<li>마지막 자식 노드로 자식 노드를 엘리먼트에 추가</li>
+</ul>
+</li>
+<li>insertBefore()<ul>
+<li>기존 자식노드 앞에 새 자식 노드를 추가</li>
+</ul>
+</li>
+<li>cloneNode()<ul>
+<li>노드를 복제</li>
+</ul>
+</li>
+<li>replaceChild()<ul>
+<li>엘리먼트의 자식 노드 바꿈</li>
+</ul>
+</li>
+<li>closest()<ul>
+<li>상위로 올라가면서 가장 가까운 엘리먼트를 반환</li>
+</ul>
+</li>
+</ul>
+<p>HTML을 문자열로 처리해주는 DOM 속성 / 메소드</p>
+<ul>
+<li>innerText<ul>
+<li>지정된 노드와 모든 자손의 텍스트 내용을 설정하거나 반환</li>
+</ul>
+</li>
+<li>innerHTML<ul>
+<li>지정된 엘리먼트의 내부 html을 설정하거나 반환</li>
+</ul>
+</li>
+<li>insertAdjacentHTML()<ul>
+<li>HTML로 텍스트를 지정된 위치에 삽입</li>
+</ul>
+</li>
+</ul>
 
 
                 
@@ -228,12 +316,6 @@
         </div>
     </div>
 </article>
-    </section>
-
-
-
-
-
 
     <!-- Footer -->
     <hr>
