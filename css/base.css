@@ -188,6 +188,18 @@ hr.small {
   margin-top: 0;
   font-size: 40px;
 }
+.intro-header .site-heading .icons,
+.intro-header .page-heading .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-header .site-heading > span,
+.intro-header .page-heading > span {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+}
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
