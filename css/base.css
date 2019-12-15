@@ -197,19 +197,19 @@ hr.small {
   margin: 0 10px;
 }
 @media only screen and (min-width: 768px) {
-  .intro-header .site-heading .icons > span,
-  .intro-header .page-heading .icons > span {
+  .intro-header .site-heading .icons > span > a,
+  .intro-header .page-heading .icons > span > a {
     margin: 0 4px;
   }
 }
-.intro-header .site-heading .icons > span > img,
-.intro-header .page-heading .icons > span > img {
+.intro-header .site-heading .icons > span > a > img,
+.intro-header .page-heading .icons > span > a > img {
   width: 40px;
   height: 40px;
 }
 @media only screen and (min-width: 768px) {
-  .intro-header .site-heading .icons > span > img,
-  .intro-header .page-heading .icons > span > img {
+  .intro-header .site-heading .icons > span > a > img,
+  .intro-header .page-heading .icons > span > a > img {
     width: 24px;
     height: 24px;
   }
