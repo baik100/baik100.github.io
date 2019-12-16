@@ -170,7 +170,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0 100px;
+    padding: 150px 0 0;
   }
 }
 .intro-header .site-heading.archives,
@@ -323,6 +323,9 @@ hr.small {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.post-content p img {
+  border: 1px solid #eee;
 }
 .post-tags,
 .post-categories {
