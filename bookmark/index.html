@@ -194,9 +194,15 @@
     $(window).on('load',function(){
         $('.post-content h4').each(function(){
             var item = $(this).next('p').find('a').length;
-            console.log(item)
             $(this).append(' ('+ item + ')'); 
         })
+    })
+
+    $(window).on('load',function(){
+        $('.post-content p a').each(function(){
+            var link = $(this).attr('href');
+            $(this).find('span').append('<img src="https://www.google.com/s2/favicons?domain=' + link + '">');
+        }) 
     })
 </script>
 
