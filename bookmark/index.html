@@ -64,6 +64,8 @@
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -85,6 +87,25 @@
 
 </head>
 
+
+<div class="backTop" style="display:none;">
+    위로가기
+</div>
+
+<script>
+    $(window).on('scroll',function(){
+        var sct = $(window).scrollTop();
+        if(sct > 150){
+            $('.backTop').show();
+        }else {
+            $('.backTop').hide();
+        }
+    })
+
+    $('.backTop').on('click',function() {
+        $('html,body').animate({scrollTop:0})
+    })
+</script>
 
 <body>
 
@@ -189,16 +210,13 @@
 <h4 id="Sketch-Plugin"><a href="#Sketch-Plugin" class="headerlink" title="Sketch Plugin"></a>Sketch Plugin</h4><p><a href="http://sketchrunner.com/?ref=fordesignrs" target="_blank" rel="noopener">Sketch Runner<span>플러그인 실행, 화면이동, 요소삽입 등 스케치에서 행하는 행동을<br> 키보드로 수행하는 플러그인</span></a><br><a href="www.invisionapp.com/craft">Invision Craft<span>인비전 서비스 연동 플러그인</span></a><br><a href="https://support.zeplin.io/sketch-integration" target="_blank" rel="noopener">Zeplin<span>제플린 업로드 플러그인, 스케치에서 제공하는 프로토타입 기능연동</span></a><br><a href="https://rodi01.github.io/RenameIt/" target="_blank" rel="noopener">Rename it<span>레이어, 아트보드 이름관리 플러그인, 접두사/접미어/숫자 증가 이름, <br>이름 찾아서 바꾸기 등 기능</span></a><br><a href="https://github.com/DWilliames/paddy-sketch-plugin">Paddy<span>간격 정리 플러그인</span></a><br><a href="https://github.com/pberrecloth/butter-sketch-plugin">Butter<span>레이어 정리 플러그인, Align, Distribute</span></a><br><a href="https://www.sketchappsources.com/" target="_blank" rel="noopener">ArtboardTricks<span>아트보드 정리 플러그인, Align, Distribute 같은<br> 크기별로 그리드에 정렬, 숫자 접두사</span></a><br><a href="https://github.com/sonburn/symbol-organizer?ref=fordesignrs">Symbol Oreganizer<span>심볼 정리 플러그인, Align, Distribue</span></a><br><a href="https://github.com/demersdesigns/sketch-batch-create-symbols">Batch Create Symbols<span>여러 선택 항목이 하나의 심볼로 병합</span></a><br><a href="https://github.com/oodesign/merge-duplicate-symbols">Merge duplicate symbols<span>동일한 이름의 심볼을 병합</span></a><br><a href="https://github.com/PRFTDigitalLabs/sketch-unlock-all-layers">Unlock All Layers<span>전체 아트보드 그룹해제</span></a><br><a href="https://github.com/swiadek/pixel-perfecter-sketch-plugin">Pixel Perfector<span>픽셀 핏으로 작업을 해도 발생하는<br> 소수점 제거 플러그인</span></a><br><a href="https://www.sketchapp.com/extensions/plugins/bitmap-compressor/" target="_blank" rel="noopener">Bitmap Compressor<span>이미지 압축 플러그인</span></a><br><a href="https://github.com/BohemianCoding/svgo-compressor">SVGO Compressor<span>svg 최적화 플러그인</span></a><br><a href="https://www.sketchgif.me/" target="_blank" rel="noopener">Sketch GIF<span>스케치 파일에 비디오와 gif를<br> 추가하는 플러그인</span></a><br><a href="https://github.com/eddiesigner/sketch-map-generator">Map generator<span>구글 지도 생성 플러그인</span></a><br><a href="https://github.com/wonderbit/sketch-select-similar-layers">Select Similar Layers<span>같은 속성 레이어 선택하기</span></a><br><a href="https://sketch2code.azurewebsites.net/generated-html/4982ca10-576b-45c8-9d64-f3e4ccac07f0" target="_blank" rel="noopener">Sketch2code<span>html, css 코드로 변환</span></a><br><a href="https://github.com/sureskumar/sketch-isometric">Sketch Isometric<span>스케치 앱의 대지 및 사각형에서 등각 투영 및 3D 회전 뷰를 생성</span></a></p>
 <h4 id="Etc"><a href="#Etc" class="headerlink" title="Etc"></a>Etc</h4><p><a href="https://romannurik.github.io/AndroidAssetStudio/nine-patches.html" target="_blank" rel="noopener">나인패치<span>안드로이드 특수이미지 형식</span></a><br><a href="https://makeappicon.com/" target="_blank" rel="noopener">Make App Icon<span>OS별 아이콘 리사이징 기능</span></a><br><a href="https://convertico.com/" target="_blank" rel="noopener">Convert Ico<span>파비콘 생성</span></a><br><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" rel="noopener">Page Speed Insights<span>사이트 속도 측정</span></a></p>
 <h4 id="Prototyping"><a href="#Prototyping" class="headerlink" title="Prototyping"></a>Prototyping</h4><p><a href="http://marvelapp.com" target="_blank" rel="noopener">Marvel<span>프로토타이핑툴(웹/앱)</span></a><br><a href="https://www.invisionapp.com/" target="_blank" rel="noopener">Invision<span>프로토타이핑툴</span></a><br><a href="https://www.protopie.io/" target="_blank" rel="noopener">Protopie<span>프로토타이핑툴</span></a></p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script>
     $(window).on('load',function(){
         $('.post-content h4').each(function(){
             var item = $(this).next('p').find('a').length;
             $(this).append(' ('+ item + ')'); 
         })
-    })
 
-    $(window).on('load',function(){
         $('.post-content p a').each(function(){
             var link = $(this).attr('href');
             $(this).find('span').append('<img src="https://www.google.com/s2/favicons?domain=' + link + '">');

@@ -531,3 +531,20 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+.backTop {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 3rem;
+  background-color: #004fff;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem 0.875rem;
+  -webkit-box-shadow: 0 4px 12px rgba(0,79,255,0.4);
+  box-shadow: 0 4px 12px rgba(0,79,255,0.4);
+}
