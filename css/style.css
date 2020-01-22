@@ -39,9 +39,9 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a,
-li a {
-  text-decoration: underline;
+p a:hover,
+li a:hover {
+  text-decoration: none;
 }
 h1,
 h2,
@@ -324,8 +324,54 @@ hr.small {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.post-content {
+  padding: 0 15px 100px;
+}
+.post-content h4 {
+  padding: 50px 0 20px;
+}
+.post-content p {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+@media only screen and (max-width: 768px) {
+  .post-content p {
+    width: 90%;
+  }
+}
 .post-content p img {
   border: 1px solid #eee;
+}
+.post-content p a {
+  padding: 30px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  display: block;
+}
+.post-content p a:first-child {
+  margin-left: 0;
+}
+@media only screen and (min-width: 768px) {
+  .post-content p a {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.post-content p a:hover {
+  background: #414141;
+  color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+.post-content p a span {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+  margin-top: 4px;
 }
 .post-tags,
 .post-categories {
